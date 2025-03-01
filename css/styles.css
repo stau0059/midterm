@@ -1,0 +1,52 @@
+body {
+    font-family: lato;
+    margin-right: 300px;
+    margin-left: 300px;
+    background-color: black;
+    }
+    h1 {
+    font-family: playfair display;
+    text-transform: uppercase;
+    }
+    .magazine-title {
+    text-transform: uppercase;
+    font-family: lato;
+    color: white;
+    font-weight: 400;
+    }
+    .welcome-title {
+    font-family: lato;
+    color: white;
+    font-weight: 500;
+    }
+    .tour-description {
+    font-family: lato;
+    color: white;
+    font-weight: 500;
+    
+    }
+    header.container {
+    background-image: url(.../images/milky-way.jpg);
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-size: cover;
+    }
+    ul {
+    list-style: none;
+    }
+    a {
+    text-decoration: none;
+    }
+    .planets {
+    padding-top: 200px;
+     display: grid;
+     grid-template-rows: 100px 100px 100px 100px 100px 100px;
+     grid-template-columns: 20% 20% 20% 20% 20% 20%;
+     grid-template-areas: 
+     "The Sun Mercury Venus Earth The Moon Mars";
+      } 
+    .planets img {
+    width: 100%;
+    height: auto;
+    }
