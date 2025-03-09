@@ -124,7 +124,7 @@ button:hover {
   background-color: aqua;
   color: black;
   transform: scale(1.2);
-  transition: transform 0.01s ease, background-color 0.001s ease;  
+  transition: transform 0.01s ease;
   transition: 0.01s;
   }
 button:focus {
@@ -137,7 +137,7 @@ button:focus {
   background-color: aqua;
   color: black;
   transform: scale(1.2);
-  transition: transform 0.01s ease, background-color 0.001s ease;  
+  transition: transform 0.01s ease;
   transition: 0.01s;
   }
   h2 {
