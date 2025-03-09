@@ -1,8 +1,11 @@
 
 body {
     font-family: "lato";
-    margin: 40px auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: black;
+    line-height: 1.5;
     }
     h1 {
     font-family: "playfair display";
@@ -12,7 +15,7 @@ body {
     .magazine-title {   
     position: absolute;
     bottom: 200px; 
-    left: 60px; 
+    left: 50px; 
     text-transform: uppercase;
     font-family: "lato";
     color: white;
@@ -20,8 +23,8 @@ body {
     }
     .welcome-title {
     position: absolute;
-    bottom: 20px;
-    left: 60px;
+    bottom: 70px;
+    left: 50px;
     font-family: "lato";
     color: white;
     font-weight: 500;
@@ -33,20 +36,26 @@ body {
     font-weight: 500;
     }
     .tour-description {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
     font-family: "lato";
     color: white;
     font-weight: 500;
     
     }
     header.container {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
     position: relative;
     background-image: url(../images/milky-way.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-    align-items: center;
-    background-size: cover;
     }
 nav {
   position: absolute;
@@ -55,27 +64,83 @@ nav {
 }
 nav ul {
   display: flex;
+  list-style-type: none;
   gap: 50px;
 }
 nav ul li a {
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 50px;
+  font-family: "lato";
 }
 nav ul li a:hover {
-  background-color: blue;
+  background-color: aqua;
+  color: black;
+  padding: 10px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  }
+  nav ul li a:focus {
+    border: 4px solid red;
   }
 .planets {
      display: grid;
-     grid-template-rows: 100px 100px 100px 100px 100px 100px;
-     grid-template-columns: 20% 20% 20% 20% 20% 20%;
+     grid-template-rows: repeat(6, auto);
+     grid-template-columns: repeat(6, 1fr);
+     justify-content: center;
+     gap: 10px;
       } 
-    .planets img {
+  .planets div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+.planets img {
     width: 100%;
     height: auto;
+    padding: 20px;
     }
-    footer {
+footer {
     color: white;
+   text-align: center;
     }
+button {
+    padding: 10px 10px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: purple;
+}
+button:hover {
+  background-color: aqua;
+  color: black;
+  transform: scale(1.2);
+  transition: transform 0.01s ease, background-color 0.001s ease;  
+  transition: 0.01s;
+  }
+button:focus {
+  border: 4px solid red;
+}
+.planets .planet-6 button:nth-of-type(1) {
+  background-color: blue;
+}
+.planets .planet-6 button:hover {
+  background-color: aqua;
+  color: black;
+  transform: scale(1.2);
+  transition: transform 0.01s ease, background-color 0.001s ease;  
+  transition: 0.01s;
+  }
+  h2 {
+    color: white;
+  }
+
