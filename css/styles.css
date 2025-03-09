@@ -1,52 +1,81 @@
+
 body {
-    font-family: lato;
-    margin-right: 300px;
-    margin-left: 300px;
+    font-family: "lato";
+    margin: 40px auto;
     background-color: black;
     }
     h1 {
-    font-family: playfair display;
+    font-family: "playfair display";
     text-transform: uppercase;
+    color: white;
     }
-    .magazine-title {
+    .magazine-title {   
+    position: absolute;
+    bottom: 200px; 
+    left: 60px; 
     text-transform: uppercase;
-    font-family: lato;
+    font-family: "lato";
     color: white;
     font-weight: 400;
     }
     .welcome-title {
-    font-family: lato;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    font-family: "lato";
     color: white;
+    font-weight: 500;
+    font-size: 3rem;
+    }
+    .meet-locals {
+    color: white;
+    font-family: "lato";
     font-weight: 500;
     }
     .tour-description {
-    font-family: lato;
+    font-family: "lato";
     color: white;
     font-weight: 500;
     
     }
     header.container {
-    background-image: url(.../images/milky-way.jpg);
+    position: relative;
+    background-image: url(../images/milky-way.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
     width: 100%;
     height: auto;
     align-items: center;
     background-size: cover;
     }
-    ul {
-    list-style: none;
-    }
-    a {
-    text-decoration: none;
-    }
-    .planets {
-    padding-top: 200px;
+nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+nav ul li a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+nav ul li a:hover {
+  background-color: blue;
+  }
+.planets {
      display: grid;
      grid-template-rows: 100px 100px 100px 100px 100px 100px;
      grid-template-columns: 20% 20% 20% 20% 20% 20%;
-     grid-template-areas: 
-     "The Sun Mercury Venus Earth The Moon Mars";
       } 
     .planets img {
     width: 100%;
     height: auto;
+    }
+    footer {
+    color: white;
     }
